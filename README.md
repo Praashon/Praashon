@@ -27,7 +27,7 @@
 </p>
 
 <details>
-  <summary><sub><code>04 / INDEX</code> &nbsp;—&nbsp; Engineering principles &amp; unpinned archive</sub></summary>
+  <summary><sub><strong>04 / INDEX</strong> &nbsp;—&nbsp; Engineering principles &amp; unpinned archive</sub></summary>
   <br />
   <table>
     <tr>

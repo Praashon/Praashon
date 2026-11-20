@@ -76,7 +76,7 @@
   <!-- Top Editorial Coordinate Bar -->
   <g class="fade-top">
     <text x="6" y="20" class="sans" font-size="13.5" font-weight="700" fill="#f0f3f6">Praashon Gautam</text>
-    <circle cx="678" cy="15.5" r="2.7" fill="#34b88a" class="calm-dot"/>
+    <circle cx="700" cy="15.5" r="2.7" fill="#34b88a" class="calm-dot"/>
     <text x="894" y="20" text-anchor="end" class="mono" font-size="10.5" fill="#6e7681" letter-spacing="0.4">27.7172° N, 85.3240° E · KTM</text>
   </g>
   <line x1="4" y1="34" x2="896" y2="34" stroke="#21262d" stroke-width="1" class="rule-draw"/>
