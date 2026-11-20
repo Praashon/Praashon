@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="442" height="146" viewBox="0 0 442 146" fill="none" role="img" aria-label="vantage-preview — INFRA · OPEN GRAPH">
+  <defs>
+    <clipPath id="clip-work-05-dark">
+      <rect x="0.5" y="0.5" width="441" height="145" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; }
+    .enter {
+      animation: cardIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.44s both;
+    }
+    .top-rule {
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      animation: ruleIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.44s forwards;
+    }
+    @keyframes cardIn {
+      from { transform: translateY(10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes ruleIn {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#clip-work-05-dark)">
+    <rect x="0" y="0" width="442" height="146" fill="#11161f"/>
+    <!-- Whisper-thin accent line draw along top edge on entrance -->
+    <line x1="0" y1="1" x2="442" y2="1" stroke="#34b88a" stroke-opacity="0.45" stroke-width="1.5" class="top-rule"/>
+
+    <g class="enter">
+      <!-- Index + Domain Kicker -->
+      <text x="22" y="28" class="mono" font-size="10" font-weight="500" fill="#6e7681" letter-spacing="1.2">05  /  INFRA · OPEN GRAPH</text>
+      <text x="420" y="28" text-anchor="end" class="sans" font-size="13" fill="#6e7681">↗</text>
+
+      <!-- Clean Title -->
+      <text x="22" y="55" class="sans" font-size="18.5" font-weight="700" fill="#f0f3f6" letter-spacing="-0.3">vantage-preview</text>
+
+      <!-- Crisp 2-line Description -->
+      <text x="22" y="77" class="sans" font-size="12.2" fill="#8b949e">Zero-latency URL preview engine fetching, caching &amp; formatting</text>
+      <text x="22" y="95" class="sans" font-size="12.2" fill="#8b949e">Open Graph metadata, smart fallbacks &amp; GitHub repo cards.</text>
+
+      <!-- Hairline Footer Separator -->
+      <line x1="22" y1="112" x2="420" y2="112" stroke="#21262d" stroke-width="1"/>
+
+      <!-- Language & Understated Metadata -->
+      <circle cx="26" cy="128" r="3.2" fill="#3178c6"/>
+      <text x="36" y="131.5" class="mono" font-size="10.5" fill="#f0f3f6">TypeScript</text>
+      <text x="420" y="131.5" text-anchor="end" class="mono" font-size="10.5" fill="#6e7681">Next.js · Redis · API</text>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="441" height="145" rx="12" stroke="#21262d" stroke-width="1"/>
+</svg>

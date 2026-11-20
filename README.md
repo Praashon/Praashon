@@ -1,77 +1,56 @@
 <p align="center">
   <a href="https://prashon.com.np">
-    <img src="./assets/hero-banner.svg" alt="Praashon Gautam — Systems, Full-Stack & AI Engineer" width="100%" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+      <img alt="Praashon Gautam — Building software and visual systems with quiet precision." src="./assets/hero-dark.svg" width="100%" />
+    </picture>
   </a>
 </p>
 
+<p align="left">
+  <a href="https://prashon.com.np"><strong>prashon.com.np</strong> ↗</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/mrprashon">LinkedIn ↗</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://x.com/praashon">X ↗</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://orcid.org/0009-0003-5372-9807">ORCID ↗</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:prashon.social@gmail.com">prashon.social@gmail.com</a>
+</p>
+
+<br />
+
+<sub><code>02 / SELECTED WORK</code></sub>
+
 <p align="center">
-  <a href="https://prashon.com.np"><img src="https://img.shields.io/badge/prashon.com.np-0b1222?style=for-the-badge&logo=vercel&logoColor=38bdf8" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/mrprashon"><img src="https://img.shields.io/badge/LinkedIn-0b1222?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn" /></a>
-  <a href="https://x.com/praashon"><img src="https://img.shields.io/badge/@praashon-0b1222?style=for-the-badge&logo=x&logoColor=e2e8f0" alt="X" /></a>
-  <a href="mailto:prashon.social@gmail.com"><img src="https://img.shields.io/badge/Email-0b1222?style=for-the-badge&logo=gmail&logoColor=34d399" alt="Email" /></a>
-  <a href="https://orcid.org/0009-0003-5372-9807"><img src="https://img.shields.io/badge/ORCID-0b1222?style=for-the-badge&logo=orcid&logoColor=a6ce39" alt="ORCID" /></a>
+  <a href="https://github.com/Praashon/phalanx"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-01-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-01-light.svg" /><img alt="phalanx" src="./assets/work-01-dark.svg" width="49%" /></picture></a>
+  <a href="https://github.com/Praashon/seedatlas"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-02-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-02-light.svg" /><img alt="seedatlas" src="./assets/work-02-dark.svg" width="49%" /></picture></a>
 </p>
 
 <p align="center">
-  <img src="./assets/divider.svg" alt="" width="100%" />
+  <a href="https://github.com/Praashon/adb-install-script-v2"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-03-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-03-light.svg" /><img alt="adb-install-script-v2" src="./assets/work-03-dark.svg" width="49%" /></picture></a>
+  <a href="https://github.com/Praashon/Daydraft"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-04-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-04-light.svg" /><img alt="Daydraft" src="./assets/work-04-dark.svg" width="49%" /></picture></a>
 </p>
 
 <p align="center">
-  <img src="./assets/about-terminal.svg" alt="Praashon Gautam Engineering Profile Terminal" width="100%" />
+  <a href="https://github.com/Praashon/vantage-preview"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-05-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-05-light.svg" /><img alt="vantage-preview" src="./assets/work-05-dark.svg" width="49%" /></picture></a>
+  <a href="https://github.com/Praashon/RouterChat"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-06-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-06-light.svg" /><img alt="RouterChat" src="./assets/work-06-dark.svg" width="49%" /></picture></a>
 </p>
 
-<p align="center">
-  <img src="./assets/divider.svg" alt="" width="100%" />
-</p>
+<sub>
+  Also shipped —
+  <a href="https://github.com/Praashon/APK_Downloader">APK Grab</a> (4★) ·
+  <a href="https://github.com/Praashon/usage-tracker">Usage Tracker</a> ·
+  <a href="https://github.com/Praashon/planora">Planora</a> ·
+  <a href="https://github.com/Praashon/Facebook-Unsaver-Script">FB Unsaver</a> ·
+  <a href="https://github.com/Praashon/document-expiry-tracker">DocTracker</a> ·
+  <a href="https://github.com/Praashon/any-vid-downloader">AnyVid</a>
+</sub>
 
-<h3 align="center">Featured Engineering Builds</h3>
-
-<p align="center">
-  <a href="https://github.com/Praashon/phalanx"><img src="./assets/card-phalanx.svg" alt="phalanx — Rust autonomous bot battle arena compiler and VM" width="49%" /></a>
-  <a href="https://github.com/Praashon/seedatlas"><img src="./assets/card-seedatlas.svg" alt="seedatlas — Browser-native Minecraft biome atlas in C and WebAssembly" width="49%" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Praashon/adb-install-script-v2"><img src="./assets/card-adb-pro.svg" alt="adb-install-script-v2 — Windows Electron Android management studio" width="49%" /></a>
-  <a href="https://github.com/Praashon/Daydraft"><img src="./assets/card-daydraft.svg" alt="Daydraft — AI daily organization platform" width="49%" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Praashon/vantage-preview"><img src="./assets/card-vantage.svg" alt="vantage-preview — Zero-latency Open Graph URL preview engine" width="49%" /></a>
-  <a href="https://github.com/Praashon/RouterChat"><img src="./assets/card-routerchat.svg" alt="RouterChat — Privacy-first BYOK multi-LLM chat with zero-downtime failover" width="49%" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Praashon/APK_Downloader"><img src="https://img.shields.io/badge/APK_Grab-★4%20Live-0f172a?style=flat-square&logo=android&logoColor=34d399" alt="APK Grab" /></a>
-  <a href="https://github.com/Praashon/usage-tracker"><img src="https://img.shields.io/badge/Usage_Tracker-Win11-0f172a?style=flat-square&logo=windows&logoColor=38bdf8" alt="Usage Tracker" /></a>
-  <a href="https://github.com/Praashon/planora"><img src="https://img.shields.io/badge/Planora-AI%203D-0f172a?style=flat-square&logo=react&logoColor=a78bfa" alt="Planora" /></a>
-  <a href="https://github.com/Praashon/Facebook-Unsaver-Script"><img src="https://img.shields.io/badge/FB_Unsaver-★1%20MV3-0f172a?style=flat-square&logo=googlechrome&logoColor=fbbf24" alt="FB Unsaver" /></a>
-  <a href="https://github.com/Praashon/document-expiry-tracker"><img src="https://img.shields.io/badge/DocTracker-Live-0f172a?style=flat-square&logo=netlify&logoColor=2dd4bf" alt="DocTracker" /></a>
-  <a href="https://github.com/Praashon/any-vid-downloader"><img src="https://img.shields.io/badge/AnyVid-FastAPI-0f172a?style=flat-square&logo=fastapi&logoColor=34d399" alt="AnyVid" /></a>
-</p>
-
-<p align="center">
-  <img src="./assets/divider.svg" alt="" width="100%" />
-</p>
-
-<p align="center">
-  <img src="./assets/tech-stack.svg" alt="Engineering Stack & Architecture Matrix" width="100%" />
-</p>
-
-<p align="center">
-  <img src="./assets/stats-hud.svg" alt="Live GitHub Telemetry Dashboard" width="100%" />
-</p>
+<br /><br />
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Praashon/Praashon/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Praashon/Praashon/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated GitHub Contribution Snake" src="https://raw.githubusercontent.com/Praashon/Praashon/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/overview-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/overview-light.svg" />
+    <img alt="Stack and Live GitHub Activity" src="./assets/overview-dark.svg" width="100%" />
   </picture>
-</p>
-
-<p align="center">
-  <a href="https://prashon.com.np">
-    <img src="./assets/footer-wave.svg" alt="Praashon Gautam — Kathmandu, Nepal" width="100%" />
-  </a>
 </p>
