@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="278" viewBox="0 0 960 278" fill="none" role="img" aria-label="Live GitHub Telemetry Dashboard for Praashon">
+  <defs>
+    <clipPath id="hud-clip">
+      <rect x="4" y="4" width="952" height="270" rx="16"/>
+    </clipPath>
+    <clipPath id="lang-bar-clip">
+      <rect x="18" y="38" width="410" height="10" rx="5"/>
+    </clipPath>
+    <linearGradient id="hud-bg" x1="0" y1="0" x2="960" y2="278" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="50%" stop-color="#0b1222"/>
+      <stop offset="100%" stop-color="#070c17"/>
+    </linearGradient>
+    <linearGradient id="lang-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ekg-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="ekg-area" x1="0" y1="20" x2="0" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="hud-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  </style>
+
+  <g clip-path="url(#hud-clip)">
+    <rect x="4" y="4" width="952" height="270" fill="url(#hud-bg)"/>
+
+    <!-- Header Strip -->
+    <text x="26" y="29" class="mono" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1.4">LIVE GITHUB TELEMETRY  <tspan fill="#38bdf8">//</tspan>  @PRAASHON</text>
+    <circle cx="774" cy="25" r="3" fill="#34d399">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="784" y="29" class="mono" font-size="10.5" fill="#6ee7b7">SYNCED · 2026-11-20 UTC</text>
+    <line x1="24" y1="39" x2="936" y2="39" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- LEFT 2x2 TELEMETRY STAT TILES -->
+    <!-- Tile 1: Contributions -->
+    <g transform="translate(24, 50)">
+      <rect x="0" y="0" width="214" height="58" rx="10" fill="#0c1425" stroke="#38bdf8" stroke-opacity="0.26"/>
+      <rect x="0" y="10" width="3.5" height="38" rx="1.75" fill="#38bdf8"/>
+      <text x="16" y="28" class="sans" font-size="22" font-weight="800" fill="#f8fafc">405</text>
+      <text x="16" y="46" class="mono" font-size="9.8" font-weight="600" fill="#7dd3fc" letter-spacing="0.8">CONTRIBUTIONS (1Y)</text>
+      <g transform="translate(184, 29)">
+        <circle cx="0" cy="0" r="13" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="13" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="28 54" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+      </g>
+    </g>
+
+    <!-- Tile 2: Public Repos -->
+    <g transform="translate(250, 50)">
+      <rect x="0" y="0" width="214" height="58" rx="10" fill="#0c1425" stroke="#34d399" stroke-opacity="0.26"/>
+      <rect x="0" y="10" width="3.5" height="38" rx="1.75" fill="#34d399"/>
+      <text x="16" y="28" class="sans" font-size="22" font-weight="800" fill="#f8fafc">50</text>
+      <text x="16" y="46" class="mono" font-size="9.8" font-weight="600" fill="#6ee7b7" letter-spacing="0.8">PUBLIC ORIGINAL REPOS</text>
+      <g transform="translate(184, 29)">
+        <circle cx="0" cy="0" r="13" stroke="#34d399" stroke-opacity="0.25" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="13" stroke="#34d399" stroke-width="1.8" stroke-dasharray="34 48" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3" fill="#34d399"/>
+      </g>
+    </g>
+
+    <!-- Tile 3: Commits & PRs -->
+    <g transform="translate(24, 120)">
+      <rect x="0" y="0" width="214" height="58" rx="10" fill="#0c1425" stroke="#a78bfa" stroke-opacity="0.26"/>
+      <rect x="0" y="10" width="3.5" height="38" rx="1.75" fill="#a78bfa"/>
+      <text x="16" y="28" class="sans" font-size="21" font-weight="800" fill="#f8fafc">339 <tspan font-size="12.5" font-weight="600" fill="#c4b5fd">/ 17 PRs</tspan></text>
+      <text x="16" y="46" class="mono" font-size="9.5" font-weight="600" fill="#c4b5fd" letter-spacing="0.7">COMMITS &amp; PULL REQUESTS</text>
+      <g transform="translate(184, 29)">
+        <circle cx="0" cy="0" r="13" stroke="#a78bfa" stroke-opacity="0.25" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="13" stroke="#a78bfa" stroke-width="1.8" stroke-dasharray="22 60" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
+      </g>
+    </g>
+
+    <!-- Tile 4: Stars & Forks -->
+    <g transform="translate(250, 120)">
+      <rect x="0" y="0" width="214" height="58" rx="10" fill="#0c1425" stroke="#fbbf24" stroke-opacity="0.26"/>
+      <rect x="0" y="10" width="3.5" height="38" rx="1.75" fill="#fbbf24"/>
+      <text x="16" y="28" class="sans" font-size="21" font-weight="800" fill="#f8fafc">8 ★ <tspan font-size="12.5" font-weight="600" fill="#fcd34d">· 3 forks</tspan></text>
+      <text x="16" y="46" class="mono" font-size="9.5" font-weight="600" fill="#fcd34d" letter-spacing="0.7">COMMUNITY RECOGNITION</text>
+      <g transform="translate(184, 29)">
+        <circle cx="0" cy="0" r="13" stroke="#fbbf24" stroke-opacity="0.25" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="13" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="30 52" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3" fill="#fbbf24"/>
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: PRIMARY CODE LANGUAGES -->
+    <g transform="translate(490, 50)">
+      <rect x="0" y="0" width="446" height="128" rx="12" fill="#0c1425" stroke="#1e293b" stroke-width="1.1"/>
+      <text x="18" y="24" class="mono" font-size="10.5" font-weight="700" fill="#94a3b8" letter-spacing="1.1">PRIMARY CODE LANGUAGES</text>
+      <text x="428" y="24" text-anchor="end" class="mono" font-size="10" fill="#64748b">PUBLIC REPOS</text>
+
+      <!-- Segmented Proportional Bar + Animated Shimmer -->
+      <g clip-path="url(#lang-bar-clip)">
+        <rect x="18.0" y="38" width="179.9" height="10" fill="#3178c6"/><rect x="197.9" y="38" width="140.0" height="10" fill="#34d399"/><rect x="337.9" y="38" width="55.9" height="10" fill="#f7df1e"/><rect x="393.8" y="38" width="16.5" height="10" fill="#f97316"/><rect x="410.3" y="38" width="14.6" height="10" fill="#38bdf8"/><rect x="424.9" y="38" width="4.0" height="10" fill="#818cf8"/>
+        <rect x="-120" y="38" width="120" height="10" fill="url(#lang-shimmer)">
+          <animate attributeName="x" values="-120;446" dur="3.6s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <!-- Legend -->
+      <circle cx="22" cy="68" r="3.6" fill="#3178c6"/><text x="33" y="72" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">TypeScript</text><text x="212" y="72" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8">43.9% · 30r</text><circle cx="234" cy="68" r="3.6" fill="#34d399"/><text x="245" y="72" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">C</text><text x="424" y="72" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8">34.1% · 1r</text><circle cx="22" cy="90" r="3.6" fill="#f7df1e"/><text x="33" y="94" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">JavaScript</text><text x="212" y="94" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8">13.6% · 41r</text><circle cx="234" cy="90" r="3.6" fill="#f97316"/><text x="245" y="94" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">Rust</text><text x="424" y="94" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8"> 4.0% · 2r</text><circle cx="22" cy="112" r="3.6" fill="#38bdf8"/><text x="33" y="116" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">Python</text><text x="212" y="116" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8"> 3.6% · 12r</text><circle cx="234" cy="112" r="3.6" fill="#818cf8"/><text x="245" y="116" class="mono" font-size="11" font-weight="600" fill="#e2e8f0">PHP</text><text x="424" y="116" text-anchor="end" class="mono" font-size="10.5" fill="#94a3b8"> 0.7% · 1r</text>
+    </g>
+
+    <!-- BOTTOM PANEL: 24-WEEK LIVE COMMIT HEARTBEAT WAVEFORM -->
+    <g transform="translate(24, 192)">
+      <rect x="0" y="0" width="912" height="68" rx="12" fill="#0a1120" stroke="#1e293b" stroke-width="1.1"/>
+      <text x="18" y="16" class="mono" font-size="9.8" font-weight="700" fill="#7dd3fc" letter-spacing="1">24-WEEK CONTRIBUTION HEARTBEAT</text>
+      <text x="894" y="16" text-anchor="end" class="mono" font-size="9.8" fill="#94a3b8">PEAK: <tspan fill="#34d399" font-weight="700">24/WK</tspan>  ·  ACTIVE: <tspan fill="#38bdf8" font-weight="700">13/24 WKS</tspan></text>
+
+      <!-- Subtle baseline -->
+      <line x1="22" y1="56" x2="886" y2="56" stroke="#1e293b" stroke-width="1"/>
+
+      <!-- Area Fill + Glowing EKG Curve -->
+      <path d="M 22.0 56.0 C 40.8 56.0, 40.8 50.3, 59.6 50.3 C 78.3 50.3, 78.3 56.0, 97.1 56.0 C 115.9 56.0, 115.9 56.0, 134.7 56.0 C 153.5 56.0, 153.5 48.9, 172.3 48.9 C 191.0 48.9, 191.0 37.6, 209.8 37.6 C 228.6 37.6, 228.6 56.0, 247.4 56.0 C 266.2 56.0, 266.2 22.0, 285.0 22.0 C 303.7 22.0, 303.7 29.1, 322.5 29.1 C 341.3 29.1, 341.3 54.6, 360.1 54.6 C 378.9 54.6, 378.9 56.0, 397.7 56.0 C 416.4 56.0, 416.4 56.0, 435.2 56.0 C 454.0 56.0, 454.0 50.3, 472.8 50.3 C 491.6 50.3, 491.6 39.0, 510.3 39.0 C 529.1 39.0, 529.1 51.8, 547.9 51.8 C 566.7 51.8, 566.7 56.0, 585.5 56.0 C 604.3 56.0, 604.3 56.0, 623.0 56.0 C 641.8 56.0, 641.8 56.0, 660.6 56.0 C 679.4 56.0, 679.4 53.2, 698.2 53.2 C 717.0 53.2, 717.0 51.8, 735.7 51.8 C 754.5 51.8, 754.5 48.9, 773.3 48.9 C 792.1 48.9, 792.1 56.0, 810.9 56.0 C 829.7 56.0, 829.7 56.0, 848.4 56.0 C 867.2 56.0, 867.2 40.4, 886.0 40.4 L 886.0 56.0 L 22.0 56.0 Z" fill="url(#ekg-area)"/>
+      <path d="M 22.0 56.0 C 40.8 56.0, 40.8 50.3, 59.6 50.3 C 78.3 50.3, 78.3 56.0, 97.1 56.0 C 115.9 56.0, 115.9 56.0, 134.7 56.0 C 153.5 56.0, 153.5 48.9, 172.3 48.9 C 191.0 48.9, 191.0 37.6, 209.8 37.6 C 228.6 37.6, 228.6 56.0, 247.4 56.0 C 266.2 56.0, 266.2 22.0, 285.0 22.0 C 303.7 22.0, 303.7 29.1, 322.5 29.1 C 341.3 29.1, 341.3 54.6, 360.1 54.6 C 378.9 54.6, 378.9 56.0, 397.7 56.0 C 416.4 56.0, 416.4 56.0, 435.2 56.0 C 454.0 56.0, 454.0 50.3, 472.8 50.3 C 491.6 50.3, 491.6 39.0, 510.3 39.0 C 529.1 39.0, 529.1 51.8, 547.9 51.8 C 566.7 51.8, 566.7 56.0, 585.5 56.0 C 604.3 56.0, 604.3 56.0, 623.0 56.0 C 641.8 56.0, 641.8 56.0, 660.6 56.0 C 679.4 56.0, 679.4 53.2, 698.2 53.2 C 717.0 53.2, 717.0 51.8, 735.7 51.8 C 754.5 51.8, 754.5 48.9, 773.3 48.9 C 792.1 48.9, 792.1 56.0, 810.9 56.0 C 829.7 56.0, 829.7 56.0, 848.4 56.0 C 867.2 56.0, 867.2 40.4, 886.0 40.4" stroke="url(#ekg-stroke)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Real Weekly Contribution Nodes -->
+      <circle cx="59.6" cy="50.3" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="172.3" cy="48.9" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="209.8" cy="37.6" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="285.0" cy="22.0" r="3.0" fill="#34d399" fill-opacity="0.9"/><circle cx="322.5" cy="29.1" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="360.1" cy="54.6" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="472.8" cy="50.3" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="510.3" cy="39.0" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="547.9" cy="51.8" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="698.2" cy="53.2" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="735.7" cy="51.8" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="773.3" cy="48.9" r="2.1" fill="#38bdf8" fill-opacity="0.9"/><circle cx="886.0" cy="40.4" r="2.1" fill="#38bdf8" fill-opacity="0.9"/>
+
+      <!-- Glowing Tracer Comet Gliding Along Real Commit Curve -->
+      <circle r="4.2" fill="#34d399" filter="url(#hud-glow)">
+        <animateMotion dur="6.2s" repeatCount="indefinite" path="M 22.0 56.0 C 40.8 56.0, 40.8 50.3, 59.6 50.3 C 78.3 50.3, 78.3 56.0, 97.1 56.0 C 115.9 56.0, 115.9 56.0, 134.7 56.0 C 153.5 56.0, 153.5 48.9, 172.3 48.9 C 191.0 48.9, 191.0 37.6, 209.8 37.6 C 228.6 37.6, 228.6 56.0, 247.4 56.0 C 266.2 56.0, 266.2 22.0, 285.0 22.0 C 303.7 22.0, 303.7 29.1, 322.5 29.1 C 341.3 29.1, 341.3 54.6, 360.1 54.6 C 378.9 54.6, 378.9 56.0, 397.7 56.0 C 416.4 56.0, 416.4 56.0, 435.2 56.0 C 454.0 56.0, 454.0 50.3, 472.8 50.3 C 491.6 50.3, 491.6 39.0, 510.3 39.0 C 529.1 39.0, 529.1 51.8, 547.9 51.8 C 566.7 51.8, 566.7 56.0, 585.5 56.0 C 604.3 56.0, 604.3 56.0, 623.0 56.0 C 641.8 56.0, 641.8 56.0, 660.6 56.0 C 679.4 56.0, 679.4 53.2, 698.2 53.2 C 717.0 53.2, 717.0 51.8, 735.7 51.8 C 754.5 51.8, 754.5 48.9, 773.3 48.9 C 792.1 48.9, 792.1 56.0, 810.9 56.0 C 829.7 56.0, 829.7 56.0, 848.4 56.0 C 867.2 56.0, 867.2 40.4, 886.0 40.4"/>
+      </circle>
+      <circle r="2.2" fill="#ffffff">
+        <animateMotion dur="6.2s" repeatCount="indefinite" path="M 22.0 56.0 C 40.8 56.0, 40.8 50.3, 59.6 50.3 C 78.3 50.3, 78.3 56.0, 97.1 56.0 C 115.9 56.0, 115.9 56.0, 134.7 56.0 C 153.5 56.0, 153.5 48.9, 172.3 48.9 C 191.0 48.9, 191.0 37.6, 209.8 37.6 C 228.6 37.6, 228.6 56.0, 247.4 56.0 C 266.2 56.0, 266.2 22.0, 285.0 22.0 C 303.7 22.0, 303.7 29.1, 322.5 29.1 C 341.3 29.1, 341.3 54.6, 360.1 54.6 C 378.9 54.6, 378.9 56.0, 397.7 56.0 C 416.4 56.0, 416.4 56.0, 435.2 56.0 C 454.0 56.0, 454.0 50.3, 472.8 50.3 C 491.6 50.3, 491.6 39.0, 510.3 39.0 C 529.1 39.0, 529.1 51.8, 547.9 51.8 C 566.7 51.8, 566.7 56.0, 585.5 56.0 C 604.3 56.0, 604.3 56.0, 623.0 56.0 C 641.8 56.0, 641.8 56.0, 660.6 56.0 C 679.4 56.0, 679.4 53.2, 698.2 53.2 C 717.0 53.2, 717.0 51.8, 735.7 51.8 C 754.5 51.8, 754.5 48.9, 773.3 48.9 C 792.1 48.9, 792.1 56.0, 810.9 56.0 C 829.7 56.0, 829.7 56.0, 848.4 56.0 C 867.2 56.0, 867.2 40.4, 886.0 40.4"/>
+      </circle>
+    </g>
+  </g>
+
+  <rect x="4" y="4" width="952" height="270" rx="16" stroke="#1e293b" stroke-width="1.2"/>
+</svg>

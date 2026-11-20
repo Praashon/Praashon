@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" fill="none" role="img" aria-label="Praashon Gautam Engineering Profile Terminal">
+  <defs>
+    <clipPath id="term-clip">
+      <rect x="4" y="4" width="952" height="240" rx="14"/>
+    </clipPath>
+    <linearGradient id="term-bg" x1="0" y1="0" x2="960" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070c16"/>
+      <stop offset="100%" stop-color="#0c1322"/>
+    </linearGradient>
+    <linearGradient id="term-top-accent" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="65%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="cube-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="emblem-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#070c16" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="t-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    .row-pulse { animation: rowFade 6s ease-in-out infinite; }
+    @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    @keyframes rowFade { 0%,100% { opacity: 0.92; } 50% { opacity: 1; } }
+  </style>
+
+  <g clip-path="url(#term-clip)">
+    <rect x="4" y="4" width="952" height="240" fill="url(#term-bg)"/>
+
+    <!-- Titlebar -->
+    <rect x="4" y="4" width="952" height="36" fill="#0d1526"/>
+    <line x1="4" y1="40" x2="956" y2="40" stroke="#1e293b" stroke-width="1"/>
+    <line x1="4" y1="5" x2="956" y2="5" stroke="url(#term-top-accent)" stroke-width="1.5"/>
+
+    <!-- Window Dots -->
+    <circle cx="26" cy="22" r="5" fill="#fb7185"/>
+    <circle cx="44" cy="22" r="5" fill="#fbbf24"/>
+    <circle cx="62" cy="22" r="5" fill="#34d399"/>
+
+    <text x="480" y="26" text-anchor="middle" class="mono" font-size="11.5" fill="#94a3b8">praashon@ktm  —  zsh  —  neofetch --engineer</text>
+
+    <!-- Live UTC+5:45 indicator -->
+    <g>
+      <circle cx="842" cy="22" r="3" fill="#34d399">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="852" y="26" class="mono" font-size="10.5" fill="#6ee7b7">NPT UTC+5:45</text>
+    </g>
+
+    <!-- Vertical Divider between Emblem and Specs -->
+    <line x1="226" y1="56" x2="226" y2="228" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- LEFT: Animated Wireframe Isometric Prism Emblem -->
+    <g transform="translate(116, 138)">
+      <circle cx="0" cy="0" r="78" fill="url(#emblem-glow)"/>
+
+      <!-- Outer Orbiting Ring -->
+      <g>
+        <circle cx="0" cy="0" r="66" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="5 6"/>
+        <circle cx="66" cy="0" r="3" fill="#38bdf8" filter="url(#t-glow)"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Counter-rotating Wireframe Hexagon -->
+      <g>
+        <polygon points="0,-52 45,-26 45,26 0,52 -45,26 -45,-26" stroke="url(#cube-stroke)" stroke-width="1.5" stroke-opacity="0.85" fill="#0a1224" fill-opacity="0.7" filter="url(#t-glow)"/>
+        <line x1="0" y1="-52" x2="0" y2="52" stroke="#38bdf8" stroke-opacity="0.28" stroke-width="1"/>
+        <line x1="-45" y1="-26" x2="45" y2="26" stroke="#34d399" stroke-opacity="0.28" stroke-width="1"/>
+        <line x1="45" y1="-26" x2="-45" y2="26" stroke="#a78bfa" stroke-opacity="0.28" stroke-width="1"/>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="28s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Inner Breathing Diamond -->
+      <polygon points="0,-24 24,0 0,24 -24,0" fill="#0d172a" stroke="#34d399" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="3s" repeatCount="indefinite"/>
+      </polygon>
+      <text x="0" y="5" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#f8fafc">0xPG</text>
+      <text x="0" y="84" text-anchor="middle" class="mono" font-size="9.5" fill="#64748b" letter-spacing="1.4">PRASHON.COM.NP</text>
+    </g>
+
+    <!-- RIGHT: Neofetch Engineering Spec Sheet -->
+    <g class="mono" font-size="12.5">
+      <text x="252" y="72" font-weight="700" fill="#38bdf8">praashon<tspan fill="#64748b">@</tspan><tspan fill="#34d399">github</tspan></text>
+      <line x1="252" y1="81" x2="438" y2="81" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1"/>
+
+      <text x="252" y="103" fill="#38bdf8" font-weight="700">ROLE</text>
+      <text x="336" y="103" fill="#e2e8f0">Systems, Full-Stack &amp; AI Engineer · Visual Brand Designer</text>
+
+      <text x="252" y="126" fill="#34d399" font-weight="700">FLAGSHIP</text>
+      <text x="336" y="126"><tspan fill="#f8fafc" font-weight="700">phalanx</tspan><tspan fill="#94a3b8"> — Rust .phx compiler, eBPF verifier &amp; zero-alloc VM</tspan></text>
+
+      <text x="252" y="149" fill="#a78bfa" font-weight="700">CRAFT</text>
+      <text x="336" y="149" fill="#e2e8f0">Deterministic engines, C/WASM, Electron tooling &amp; AI interfaces</text>
+
+      <text x="252" y="172" fill="#fbbf24" font-weight="700">TOOLKIT</text>
+      <text x="336" y="172" fill="#cbd5e1">Rust · C/WASM · TypeScript · Next.js · Python · C# · Redis · Supabase</text>
+
+      <text x="252" y="195" fill="#fb7185" font-weight="700">SHIPPED</text>
+      <text x="336" y="195" fill="#e2e8f0">50+ public repos spanning compilers, desktop apps &amp; live AI products</text>
+
+      <!-- Active Prompt Line -->
+      <text x="252" y="222"><tspan fill="#34d399" font-weight="700">❯ </tspan><tspan fill="#94a3b8">status --open-to </tspan><tspan fill="#7dd3fc">"ambitious systems, developer tools &amp; AI builds"</tspan></text>
+      <rect x="734" y="211" width="7.5" height="13" rx="1.5" fill="#38bdf8" class="blink"/>
+    </g>
+
+    <!-- Subtle Vertical Scan Sheen -->
+    <rect x="228" y="40" width="728" height="2" fill="#34d399" fill-opacity="0.12">
+      <animate attributeName="y" values="42;242" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="4" y="4" width="952" height="240" rx="14" stroke="#1e293b" stroke-width="1.2"/>
+</svg>

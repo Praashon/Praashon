@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="196" viewBox="0 0 468 196" fill="none" role="img" aria-label="Daydraft — AI PRODUCT · NEXT.JS &amp; SUPABASE">
+  <defs>
+    <clipPath id="c-day">
+      <rect x="2" y="2" width="464" height="192" rx="14"/>
+    </clipPath>
+    <linearGradient id="bg-day" x1="0" y1="0" x2="468" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d18"/>
+      <stop offset="100%" stop-color="#0e1628"/>
+    </linearGradient>
+    <radialGradient id="glow-day" cx="0.86" cy="0.28" r="0.52">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#ec4899" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#080d18" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar-day" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title-day" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="f-day" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+
+  <g clip-path="url(#c-day)">
+    <rect x="2" y="2" width="464" height="192" fill="url(#bg-day)"/>
+    <rect x="2" y="2" width="464" height="192" fill="url(#glow-day)"/>
+
+    <!-- Animated Top Laser Bar -->
+    <rect x="-180" y="2" width="180" height="2.4" fill="url(#bar-day)">
+      <animate attributeName="x" values="-180;468" dur="4.6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Category Kicker -->
+    <circle cx="29" cy="27" r="3.2" fill="#3178c6">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="39" y="30.5" class="mono" font-size="10" font-weight="700" fill="#a855f7" letter-spacing="1.1">AI PRODUCT · NEXT.JS &amp; SUPABASE</text>
+
+    <!-- Repo Title -->
+    <text x="24" y="60" class="sans" font-size="21" font-weight="800" fill="url(#title-day)" letter-spacing="-0.3">Daydraft</text>
+
+    <!-- Description -->
+    <text x="24" y="86" class="sans" font-size="12.5" fill="#94a3b8">AI-powered daily life organizer turning messy</text>
+    <text x="24" y="105" class="sans" font-size="12.5" fill="#94a3b8">brain dumps into focused tasks, schedules &amp;</text>
+    <text x="24" y="124" class="sans" font-size="12.5" fill="#94a3b8">notes using dual Gemini + OpenRouter engines.</text>
+
+    <!-- Subtle separator -->
+    <line x1="24" y1="142" x2="444" y2="142" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Tech Pills -->
+    <rect x="24" y="154" width="65" height="22" rx="6" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.32" stroke-width="1"/><text x="56.5" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">NEXT.JS</text>
+    <rect x="97" y="154" width="79" height="22" rx="6" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.32" stroke-width="1"/><text x="136.5" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">GEMINI AI</text>
+    <rect x="184" y="154" width="72" height="22" rx="6" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.32" stroke-width="1"/><text x="220.0" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">SUPABASE</text>
+
+    <!-- Right Language & Status -->
+    <text x="444" y="169" text-anchor="end" class="mono" font-size="10.5" font-weight="700" fill="#e2e8f0">LIVE · TS ↗</text>
+
+    <!-- BESPOKE ANIMATED WIDGET (Top-Right 88x88 Arena) -->
+    <g transform="translate(362, 22)">
+      <rect x="0" y="0" width="84" height="84" rx="12" fill="#060a14" fill-opacity="0.78" stroke="#a855f7" stroke-opacity="0.24" stroke-width="1"/>
+      
+      <!-- Neural Core Orb (Top) -->
+      <circle cx="42" cy="24" r="10" fill="#a855f7" fill-opacity="0.22" stroke="#c084fc" stroke-width="1.3">
+        <animate attributeName="r" values="9;11.5;9" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <g>
+        <circle cx="56" cy="24" r="2.2" fill="#f472b6" filter="url(#f-day)"/>
+        <circle cx="28" cy="24" r="2" fill="#38bdf8" filter="url(#f-day)"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 42 24" to="360 42 24" dur="5s" repeatCount="indefinite"/>
+      </g>
+      <circle cx="42" cy="24" r="3" fill="#f8fafc"/>
+
+      <!-- Flowing energy drop -->
+      <line x1="42" y1="35" x2="42" y2="45" stroke="#c084fc" stroke-width="1.2" stroke-dasharray="2 2"/>
+      <circle cx="42" cy="36" r="2" fill="#f472b6">
+        <animate attributeName="cy" values="35;45" dur="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Structured Crystallized Task Bars -->
+      <rect x="16" y="48" width="52" height="7" rx="3.5" fill="#1e1b4b" stroke="#a855f7" stroke-opacity="0.5"/>
+      <rect x="16" y="48" width="0" height="7" rx="3.5" fill="#a855f7">
+        <animate attributeName="width" values="10;46;46;10" dur="3.8s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect x="16" y="59" width="52" height="7" rx="3.5" fill="#1e1b4b" stroke="#ec4899" stroke-opacity="0.5"/>
+      <rect x="16" y="59" width="0" height="7" rx="3.5" fill="#ec4899">
+        <animate attributeName="width" values="10;38;38;10" dur="3.8s" begin="0.45s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect x="16" y="70" width="52" height="7" rx="3.5" fill="#1e1b4b" stroke="#38bdf8" stroke-opacity="0.5"/>
+      <rect x="16" y="70" width="0" height="7" rx="3.5" fill="#38bdf8">
+        <animate attributeName="width" values="10;50;50;10" dur="3.8s" begin="0.9s" repeatCount="indefinite"/>
+      </rect>
+    
+    </g>
+  </g>
+
+  <rect x="2" y="2" width="464" height="192" rx="14" stroke="#1e293b" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="196" viewBox="0 0 468 196" fill="none" role="img" aria-label="vantage-preview — INFRA · OPEN GRAPH &amp; REDIS">
+  <defs>
+    <clipPath id="c-van">
+      <rect x="2" y="2" width="464" height="192" rx="14"/>
+    </clipPath>
+    <linearGradient id="bg-van" x1="0" y1="0" x2="468" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d18"/>
+      <stop offset="100%" stop-color="#0e1628"/>
+    </linearGradient>
+    <radialGradient id="glow-van" cx="0.86" cy="0.28" r="0.52">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#14b8a6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#080d18" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar-van" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title-van" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="f-van" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+
+  <g clip-path="url(#c-van)">
+    <rect x="2" y="2" width="464" height="192" fill="url(#bg-van)"/>
+    <rect x="2" y="2" width="464" height="192" fill="url(#glow-van)"/>
+
+    <!-- Animated Top Laser Bar -->
+    <rect x="-180" y="2" width="180" height="2.4" fill="url(#bar-van)">
+      <animate attributeName="x" values="-180;468" dur="4.6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Category Kicker -->
+    <circle cx="29" cy="27" r="3.2" fill="#3178c6">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="39" y="30.5" class="mono" font-size="10" font-weight="700" fill="#06b6d4" letter-spacing="1.1">INFRA · OPEN GRAPH &amp; REDIS</text>
+
+    <!-- Repo Title -->
+    <text x="24" y="60" class="sans" font-size="21" font-weight="800" fill="url(#title-van)" letter-spacing="-0.3">vantage-preview</text>
+
+    <!-- Description -->
+    <text x="24" y="86" class="sans" font-size="12.5" fill="#94a3b8">Zero-latency URL preview &amp; rich embed engine.</text>
+    <text x="24" y="105" class="sans" font-size="12.5" fill="#94a3b8">Fetches, caches &amp; formats Open Graph metadata,</text>
+    <text x="24" y="124" class="sans" font-size="12.5" fill="#94a3b8">smart fallbacks &amp; live GitHub repository cards.</text>
+
+    <!-- Subtle separator -->
+    <line x1="24" y1="142" x2="444" y2="142" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Tech Pills -->
+    <rect x="24" y="154" width="65" height="22" rx="6" fill="#0f172a" stroke="#06b6d4" stroke-opacity="0.32" stroke-width="1"/><text x="56.5" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">NEXT.JS</text>
+    <rect x="97" y="154" width="54" height="22" rx="6" fill="#0f172a" stroke="#06b6d4" stroke-opacity="0.32" stroke-width="1"/><text x="124.0" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">REDIS</text>
+    <rect x="159" y="154" width="86" height="22" rx="6" fill="#0f172a" stroke="#06b6d4" stroke-opacity="0.32" stroke-width="1"/><text x="202.0" y="168.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">OPEN GRAPH</text>
+
+    <!-- Right Language & Status -->
+    <text x="444" y="169" text-anchor="end" class="mono" font-size="10.5" font-weight="700" fill="#e2e8f0">API · TS ↗</text>
+
+    <!-- BESPOKE ANIMATED WIDGET (Top-Right 88x88 Arena) -->
+    <g transform="translate(362, 22)">
+      <rect x="0" y="0" width="84" height="84" rx="12" fill="#060a14" fill-opacity="0.78" stroke="#06b6d4" stroke-opacity="0.24" stroke-width="1"/>
+      
+      <!-- High-Speed Cache Rings -->
+      <circle cx="42" cy="42" r="30" stroke="#06b6d4" stroke-opacity="0.22" stroke-width="1.2"/>
+      <g>
+        <circle cx="42" cy="42" r="24" stroke="#22d3ee" stroke-width="2" stroke-dasharray="36 115" stroke-linecap="round" filter="url(#f-van)"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 42 42" to="360 42 42" dur="2.1s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <circle cx="42" cy="42" r="17" stroke="#2dd4bf" stroke-width="1.6" stroke-dasharray="22 86" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="rotate" from="360 42 42" to="0 42 42" dur="1.7s" repeatCount="indefinite"/>
+      </g>
+      <!-- Pulsing Lightning Core -->
+      <polygon points="44,28 34,44 42,44 40,56 50,40 42,40" fill="#22d3ee" filter="url(#f-van)">
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="1.5s" repeatCount="indefinite"/>
+      </polygon>
+    
+    </g>
+  </g>
+
+  <rect x="2" y="2" width="464" height="192" rx="14" stroke="#1e293b" stroke-width="1.2"/>
+</svg>
