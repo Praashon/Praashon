@@ -61,7 +61,7 @@
     <!-- Minimal Top Header Bar -->
     <g class="fade-0">
       <text x="36" y="36" class="sans" font-size="13.5" font-weight="700" fill="#f0f3f6">Praashon Gautam</text>
-      <circle cx="742" cy="31.5" r="3" fill="#34b88a" class="calm-dot"/>
+      <circle cx="754" cy="31.5" r="2.8" fill="#34b88a" class="calm-dot"/>
       <text x="864" y="36" text-anchor="end" class="mono" font-size="11" fill="#6e7681">Kathmandu · NPT</text>
     </g>
 

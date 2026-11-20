@@ -18,7 +18,13 @@
 
 <br />
 
-<sub><code>02 / SELECTED WORK</code></sub>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/section-work-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/section-work-light.svg" />
+    <img alt="02 / Selected Work" src="./assets/section-work-dark.svg" width="100%" />
+  </picture>
+</p>
 
 <p align="center">
   <a href="https://github.com/Praashon/phalanx"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/work-01-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/work-01-light.svg" /><img alt="phalanx" src="./assets/work-01-dark.svg" width="49%" /></picture></a>
