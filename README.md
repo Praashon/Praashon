@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://prashon.com.np"><img src="https://img.shields.io/badge/Portfolio-prashon.com.np-0b1222?style=for-the-badge&logo=vercel&logoColor=38bdf8&labelColor=0f172a" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/mrprashon"><img src="https://img.shields.io/badge/LinkedIn-mrprashon-0b1222?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=0f172a" alt="LinkedIn" /></a>
-  <a href="https://x.com/praashon"><img src="https://img.shields.io/badge/X-@praashon-0b1222?style=for-the-badge&logo=x&logoColor=e2e8f0&labelColor=0f172a" alt="X" /></a>
-  <a href="mailto:prashon.social@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-0b1222?style=for-the-badge&logo=gmail&logoColor=34d399&labelColor=0f172a" alt="Email" /></a>
-  <a href="https://orcid.org/0009-0003-5372-9807"><img src="https://img.shields.io/badge/ORCID-Research-0b1222?style=for-the-badge&logo=orcid&logoColor=a6ce39&labelColor=0f172a" alt="ORCID" /></a>
+  <a href="https://prashon.com.np"><img src="https://img.shields.io/badge/prashon.com.np-0b1222?style=for-the-badge&logo=vercel&logoColor=38bdf8" alt="Portfolio" /></a>
+  <a href="https://linkedin.com/in/mrprashon"><img src="https://img.shields.io/badge/LinkedIn-0b1222?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn" /></a>
+  <a href="https://x.com/praashon"><img src="https://img.shields.io/badge/@praashon-0b1222?style=for-the-badge&logo=x&logoColor=e2e8f0" alt="X" /></a>
+  <a href="mailto:prashon.social@gmail.com"><img src="https://img.shields.io/badge/Email-0b1222?style=for-the-badge&logo=gmail&logoColor=34d399" alt="Email" /></a>
+  <a href="https://orcid.org/0009-0003-5372-9807"><img src="https://img.shields.io/badge/ORCID-0b1222?style=for-the-badge&logo=orcid&logoColor=a6ce39" alt="ORCID" /></a>
 </p>
 
 <p align="center">
@@ -42,13 +42,12 @@
 </p>
 
 <p align="center">
-  <sub><strong>Also Shipped:</strong></sub>&nbsp;
-  <a href="https://github.com/Praashon/APK_Downloader"><img src="https://img.shields.io/badge/APK_Grab-★4%20·%20Live-0f172a?style=flat-square&logo=android&logoColor=34d399" alt="APK Grab" /></a>
-  <a href="https://github.com/Praashon/usage-tracker"><img src="https://img.shields.io/badge/Usage_Tracker-Win11%20C%23-0f172a?style=flat-square&logo=windows&logoColor=38bdf8" alt="Usage Tracker" /></a>
-  <a href="https://github.com/Praashon/planora"><img src="https://img.shields.io/badge/Planora-AI%202D→3D-0f172a?style=flat-square&logo=react&logoColor=a78bfa" alt="Planora" /></a>
-  <a href="https://github.com/Praashon/Facebook-Unsaver-Script"><img src="https://img.shields.io/badge/FB_Unsaver-★1%20·%20Chrome%20MV3-0f172a?style=flat-square&logo=googlechrome&logoColor=fbbf24" alt="FB Unsaver" /></a>
+  <a href="https://github.com/Praashon/APK_Downloader"><img src="https://img.shields.io/badge/APK_Grab-★4%20Live-0f172a?style=flat-square&logo=android&logoColor=34d399" alt="APK Grab" /></a>
+  <a href="https://github.com/Praashon/usage-tracker"><img src="https://img.shields.io/badge/Usage_Tracker-Win11-0f172a?style=flat-square&logo=windows&logoColor=38bdf8" alt="Usage Tracker" /></a>
+  <a href="https://github.com/Praashon/planora"><img src="https://img.shields.io/badge/Planora-AI%203D-0f172a?style=flat-square&logo=react&logoColor=a78bfa" alt="Planora" /></a>
+  <a href="https://github.com/Praashon/Facebook-Unsaver-Script"><img src="https://img.shields.io/badge/FB_Unsaver-★1%20MV3-0f172a?style=flat-square&logo=googlechrome&logoColor=fbbf24" alt="FB Unsaver" /></a>
   <a href="https://github.com/Praashon/document-expiry-tracker"><img src="https://img.shields.io/badge/DocTracker-Live-0f172a?style=flat-square&logo=netlify&logoColor=2dd4bf" alt="DocTracker" /></a>
-  <a href="https://github.com/Praashon/any-vid-downloader"><img src="https://img.shields.io/badge/AnyVid-Next.js%20%2B%20FastAPI-0f172a?style=flat-square&logo=fastapi&logoColor=34d399" alt="AnyVid" /></a>
+  <a href="https://github.com/Praashon/any-vid-downloader"><img src="https://img.shields.io/badge/AnyVid-FastAPI-0f172a?style=flat-square&logo=fastapi&logoColor=34d399" alt="AnyVid" /></a>
 </p>
 
 <p align="center">
