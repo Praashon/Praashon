@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="184" viewBox="0 0 900 184" fill="none" role="img" aria-label="Disciplines, Current Focus, and Codebase Footprint">
+  <defs>
+    <clipPath id="sp-bar-light">
+      <rect x="506" y="150" width="0" height="3.5" rx="1.75">
+        <animate attributeName="width" from="0" to="388" dur="1.05s" begin="0.45s" calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; }
+    .top-rule {
+      stroke-dasharray: 892;
+      stroke-dashoffset: 892;
+      animation: draw 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.28s forwards;
+    }
+    .c1 { animation: rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both; }
+    .c2 { animation: rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes rise {
+      from { transform: translateY(10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+
+  <!-- Seamless Top Hairline (Zero Outer Box!) -->
+  <line x1="4" y1="1" x2="896" y2="1" stroke="#e5e5e0" stroke-width="1" class="top-rule"/>
+
+  <!-- LEFT: 02 / DISCIPLINES -->
+  <g class="c1">
+    <text x="6" y="28" class="mono" font-size="10" font-weight="500" fill="#8a8a83" letter-spacing="1.5">02 / DISCIPLINES</text>
+
+    <text x="6" y="60" class="mono" font-size="11" fill="#15996c">Systems</text>
+    <text x="92" y="60" class="sans" font-size="12.5" fill="#262624">Rust, C, WebAssembly, C#, Python</text>
+    <line x1="6" y1="74" x2="452" y2="74" stroke="#eeeeea" stroke-width="1"/>
+
+    <text x="6" y="96" class="mono" font-size="11" fill="#15996c">Interface</text>
+    <text x="92" y="96" class="sans" font-size="12.5" fill="#262624">TypeScript, React, Next.js, Tailwind, Three.js, GSAP</text>
+    <line x1="6" y1="110" x2="452" y2="110" stroke="#eeeeea" stroke-width="1"/>
+
+    <text x="6" y="132" class="mono" font-size="11" fill="#15996c">Backend</text>
+    <text x="92" y="132" class="sans" font-size="12.5" fill="#262624">Node.js, FastAPI, PostgreSQL, Supabase, Redis, LLMs</text>
+    <line x1="6" y1="146" x2="452" y2="146" stroke="#eeeeea" stroke-width="1"/>
+
+    <text x="6" y="168" class="mono" font-size="11" fill="#15996c">Tooling</text>
+    <text x="92" y="168" class="sans" font-size="12.5" fill="#262624">Electron, ADB / SCRCPY, Chrome MV3, Linux</text>
+  </g>
+
+  <!-- Vertical Hairline -->
+  <line x1="478" y1="18" x2="478" y2="174" stroke="#e5e5e0" stroke-width="1"/>
+
+  <!-- RIGHT: 03 / NOW & CODEBASE FOOTPRINT -->
+  <g class="c2">
+    <text x="506" y="28" class="mono" font-size="10" font-weight="500" fill="#8a8a83" letter-spacing="1.5">03 / CURRENTLY</text>
+
+    <text x="506" y="60" class="mono" font-size="11" fill="#15996c">Building</text>
+    <text x="588" y="60" class="sans" font-size="12.5" font-weight="600" fill="#262624">phalanx</text>
+    <text x="588" y="77" class="sans" font-size="12" fill="#5e5e59">Rust compiler, eBPF verifier &amp; zero-alloc VM</text>
+    <line x1="506" y1="91" x2="894" y2="91" stroke="#eeeeea" stroke-width="1"/>
+
+    <text x="506" y="113" class="mono" font-size="11" fill="#15996c">Exploring</text>
+    <text x="588" y="113" class="sans" font-size="12.5" font-weight="600" fill="#262624">WebAssembly &amp; AI UX</text>
+    <text x="588" y="130" class="sans" font-size="12" fill="#5e5e59">Local-first engines and quiet visual systems</text>
+
+    <!-- Minimal Cross-Repo Codebase Proportion Hairline -->
+    <rect x="506" y="150" width="388" height="3.5" rx="1.75" fill="#e8e8e3"/>
+    <g clip-path="url(#sp-bar-light)">
+      <rect x="506.0" y="150" width="170.7" height="3.5" fill="#2b6cb0"/><rect x="676.7" y="150" width="131.9" height="3.5" fill="#15996c"/><rect x="808.6" y="150" width="54.3" height="3.5" fill="#b78428"/><rect x="863.0" y="150" width="15.5" height="3.5" fill="#b55d35"/><rect x="878.5" y="150" width="15.5" height="3.5" fill="#3b82a6"/>
+    </g>
+    <circle cx="508.5" cy="167" r="2.4" fill="#2b6cb0"/><text x="515" y="170.5" class="mono" font-size="9.8" fill="#8a8a83">TS 44%</text><circle cx="574.5" cy="167" r="2.4" fill="#15996c"/><text x="581" y="170.5" class="mono" font-size="9.8" fill="#8a8a83">C 34%</text><circle cx="640.5" cy="167" r="2.4" fill="#b78428"/><text x="647" y="170.5" class="mono" font-size="9.8" fill="#8a8a83">JS 14%</text><circle cx="706.5" cy="167" r="2.4" fill="#b55d35"/><text x="713" y="170.5" class="mono" font-size="9.8" fill="#8a8a83">Rust 4%</text><circle cx="772.5" cy="167" r="2.4" fill="#3b82a6"/><text x="779" y="170.5" class="mono" font-size="9.8" fill="#8a8a83">Python 4%</text>
+  </g>
+</svg>
